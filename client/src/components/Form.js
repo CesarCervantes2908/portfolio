@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from './Button';
 import '../styles/Form.css';
-function Form({ changeName, changeEmail, changeMessage, name, email, message}) {
+function Form({ changeName, changeEmail, changeMessage, name, email, message, handleSubmit}) {
     return (
-        <form>
+        <form onSubmit={e => handleSubmit(e)}>
             <input 
                 type="text" 
                 placeholder="Escribe tu nombre"
