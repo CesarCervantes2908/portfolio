@@ -1,0 +1,13 @@
+a.btn-download{
+    height: 40px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    margin: 2vh 2vw;
+}
+a.btn-download svg{
+    width: auto;
+    height: 25px;
+    margin-right: 2vw;
+}

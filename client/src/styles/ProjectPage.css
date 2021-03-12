@@ -1,0 +1,29 @@
+h2.project-title{
+    margin: 2vh 0;
+}
+p.project-description{
+    width: 80%;
+    max-width: 800px;
+    text-align: justify;
+    margin-bottom: 5vh;
+}
+section.project-page > h3{
+    margin: 3vh 0;
+}
+section.project-page ul.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 800px;
+    height: 30vh;
+    margin: 5vh 0;
+}
+section.project-page ul.skill-list li{
+    height: 10px;
+    width: 110px;
+    margin: 2vh;
+}
+.awssld__content  img{
+    object-fit: fill !important;
+}

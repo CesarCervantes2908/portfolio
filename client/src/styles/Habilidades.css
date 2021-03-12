@@ -1,0 +1,37 @@
+div.download-button-group{
+    width: 100vw;
+    margin: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.project-card-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (min-width: 700px){
+    section#habilidades{
+        align-items: flex-start;
+        justify-content: start;
+        position: relative;
+    }
+    div.download-button-group{
+        position: absolute;
+        top: 4vh;
+        right: 2vw;
+        width: auto;
+    }
+    div.project-card-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20vh;
+    }
+}
+@media only screen and (min-width: 950px){
+     div.download-button-group{
+         flex-direction: row;
+     }
+}

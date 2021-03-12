@@ -1,0 +1,37 @@
+div.project-card{
+    width: 80%;
+    max-width: 450px;
+    height: 80vh;
+    border: solid 1px #99F5EA;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 2vh 2vw;
+    position: relative;
+}
+div.project-card img.card-image{
+    width: 100%;
+    height: 55%;
+}
+div.project-card h3.card-title{
+    width: 100%;
+    text-align: start;
+    padding-left: 10%;
+    margin-top: 2vh;
+}
+div.project-card p.small-desc{
+    width: 80%;
+    text-align: start;
+    padding-left: 10%;
+    margin: 4vh 0 2vh 0 ;
+}
+a.card-link{
+    color: #99F5EA;
+    position: absolute;
+    bottom: 1vh;
+    right: 2vw;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+a.card-link:hover{
+    letter-spacing: 1px;
+}

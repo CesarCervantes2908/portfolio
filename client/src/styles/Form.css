@@ -1,0 +1,61 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 450px;
+    margin: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+form input, form textarea{
+    background: none;
+    border: none;
+    margin: 3vh 0;
+    color: #99F5EA;
+    font-size: 7vw;
+    width: 100%;
+    outline: none;
+}
+form input{
+    border-bottom: solid 1px #99F5EA;
+}
+form textarea{
+    border: solid 1px #99F5EA;
+    min-height: 30vh;
+    border-radius: 25px;
+    padding: 0.5rem;
+    font-size: 5vw;
+}
+::placeholder{
+    color: #99F5EA;
+    padding: 0 1rem;
+    font-size: 7vw;
+}
+form input::placeholder{
+    padding: 1.5rem;
+}
+form input:active{
+    border: none;
+}
+form button{
+    height: 40px;
+    width: 200px; 
+    font-weight: 700;
+    border-radius: 20px;  
+    font-size: 1.2rem; 
+}
+@media only screen and (min-width: 450px){
+    form input, form input::placeholder{
+        font-size: 1.7rem;
+    }
+    form textarea, form textarea::placeholder{
+        font-size: 1.2rem;
+    }
+    form button{
+        height: 60px;
+        width: 200px; 
+        font-weight: 700;
+        border-radius: 30px;  
+        font-size: 1.5rem;   
+    }
+}
