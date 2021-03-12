@@ -1,5 +1,5 @@
-# portfolio
-###This is where I show my fullstack web developer work
+# Portfolio
+### This is where I show my fullstack web developer work
 
 This is a React app with a backend in Node.
 The frontend was created with the create-react-app command.
