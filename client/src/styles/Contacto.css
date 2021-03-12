@@ -1,0 +1,28 @@
+div.contacto-container{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto__message{
+    font-size: 35px;
+    letter-spacing: 1px;
+    width: 80%;
+    text-align: center;
+    color: #99F5EA;
+}
+h3#error span{
+    color: #f10b0b;
+    font-size: inherit;
+}
+h3#success{
+    color: #16d43f;
+}
+@media only screen and (min-width: 700px){
+    section#contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

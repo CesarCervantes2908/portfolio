@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Form from './Form'
+import '../styles/Contacto.css';
 
 function Contacto() {
     const [name, setName] = useState('');
@@ -25,17 +26,17 @@ function Contacto() {
                 body
             });
             if(response.ok){
-                setSending(false);
                 let jsonResponse = await response.json();
                 console.log(jsonResponse);
                 setSuccess(true);
+                setSending(false);
             }else{
                 throw new Error("Algo ocurrió mal")
             };
         } catch (error) {
             console.error(error);
-            setSending(false);
             setError(true); 
+            setSending(false);
         };
         let timeoutID = setTimeout(()=>{
             setError(false);
@@ -49,20 +50,22 @@ function Contacto() {
     return (
         <section id="contacto">
             <h2>Contacto</h2>
-            {
-                sending ? <h3>Enviando...</h3> 
-                : error ? <h3>Algo salió Mal</h3>
-                : success ? <h3>Su mensaje se envió correctamente</h3>
-                : <Form
-                    changeName={setName}
-                    changeEmail={setEmail}
-                    changeMessage={setMessage}
-                    name={name}
-                    email={email}
-                    message={message}
-                    handleSubmit={sendMail}
-                ></Form>
-            }
+            <div className="contacto-container">
+                {
+                    sending ? <h3 className="contacto__message" id="sending">Enviando...</h3>
+                        : error ? <h3 className="contacto__message" id="error">Su mensaje <span>NO</span> pudo ser enviado<br/>Inténtelo de nuevo.</h3>
+                            : success ? <h3 className="contacto__message" id="success">Su mensaje se envió correctamente</h3>
+                                : <Form
+                                    changeName={setName}
+                                    changeEmail={setEmail}
+                                    changeMessage={setMessage}
+                                    name={name}
+                                    email={email}
+                                    message={message}
+                                    handleSubmit={sendMail}
+                                ></Form>
+                }
+            </div>
         </section>
     );
 };
