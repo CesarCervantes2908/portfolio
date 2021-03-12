@@ -6,6 +6,8 @@ import 'react-awesome-slider/dist/styles.css';
 import SkillList from '../components/SkillList';
 import '../styles/ProjectPage.css';
 import ProjectNav from './ProjectNav';
+import { animateScroll } from 'react-scroll';
+
 
 
 function ProjectPage() {
@@ -15,6 +17,9 @@ function ProjectPage() {
         const handler = event => setMatches(event.matches);
         mediaMatch.addEventListener('change', handler);
         return () => mediaMatch.removeEventListener('change', handler);
+    });
+    useEffect(()=>{
+        animateScroll.scrollTo(0);
     });
     let styles = {
         position: 'relative',

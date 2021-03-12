@@ -1,5 +1,5 @@
-import React from 'react';
-import { Element } from 'react-scroll';
+import React, { useEffect } from 'react';
+import { Element, animateScroll } from 'react-scroll';
 import NavBar from './NavBar';
 import Inicio from './Inicio';
 import Habilidades from './Habilidades';
@@ -14,6 +14,9 @@ const styles = {
 };
 
 function MainPage() {
+    useEffect(()=>{
+        animateScroll.scrollTo(0);
+    }, []);
     return (
         <main>
             <NavBar></NavBar>
