@@ -15,14 +15,36 @@ function Contacto() {
         let body = {
             name, email, message
         };
-        console.log(body);
-        await setTimeout(()=>{
+        body = JSON.stringify(body);
+        try {
+            let response = await fetch(`/send-email`,{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body
+            });
+            if(response.ok){
+                setSending(false);
+                let jsonResponse = await response.json();
+                console.log(jsonResponse);
+                setSuccess(true);
+            }else{
+                throw new Error("Algo ocurrió mal")
+            };
+        } catch (error) {
+            console.error(error);
             setSending(false);
-            setSuccess(true);
-        }, 2000);
-        await setTimeout(()=>{
+            setError(true); 
+        };
+        let timeoutID = setTimeout(()=>{
+            setError(false);
             setSuccess(false);
-        }, 2000);
+            setName('');
+            setEmail('');
+            setMessage('');
+            clearTimeout(timeoutID);
+        }, 3000);
     };
     return (
         <section id="contacto">
