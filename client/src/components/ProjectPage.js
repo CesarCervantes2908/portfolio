@@ -59,7 +59,11 @@ function ProjectPage() {
                 </p>
                 <h3 className="tecnologias">Tecnologías Utilizadas</h3>
                 <SkillList skills={project.skills}></SkillList>
-                <a href={project.link} className="btn btn-link" target="_blank">Visita el Sitio</a>
+                <a 
+                    href={project.link} 
+                    className="btn btn-link" 
+                    target="_blank"
+                    rel="noreferrer">Visita el Sitio</a>
             </section>
         </>
     );

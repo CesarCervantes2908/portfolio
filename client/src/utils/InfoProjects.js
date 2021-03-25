@@ -7,6 +7,14 @@ import salamandra1 from '../images/Salamandramilk2.jpg';
 import salamandra2 from '../images/Salamandramilk3.jpg';
 import salamandra3 from '../images/Salamandramilk4.jpg';
 import salamandra4 from '../images/Salamandramilk5.jpg';
+import burritos1 from '../images/Burritos1.jpg';
+import burritos2 from '../images/Burritos2.jpg';
+import burritos3 from '../images/Burritos3.jpg';
+import burritos4 from '../images/Burritos4.jpg';
+import burritos5 from '../images/Burritos5.jpg';
+import burritos6 from '../images/Burritos6.jpg';
+import burritos7 from '../images/Burritos7.jpg';
+import burritos8 from '../images/Burritos8.jpg';
 
 let projects = [
     {
@@ -37,9 +45,10 @@ let projects = [
         id: 'burritosApp',
         name: 'BurritosApp',
         mainImg: {
-
+            imgageURL: burritos1,
+            alt: 'Previsualización del sitio web de Burritos App'
         },
-        images: [],
+        images: [burritos1, burritos2, burritos3, burritos4, burritos5, burritos6, burritos7, burritos8],
         smallDesc: "Aplicación Web que permite administrar un negocio local de venta de burritos y tacos",
         skills: ["HTML", "Bootstrap", "React", "React Router", "React Hooks", "Node.JS", "Express", "MongoDB"],
         desc: "Esta apliación Web permite administrar un negocio. Está enfocada a un negocio de mi localidad de venta de burritos y tacos. Cuenta con tres apartados principales. Ventas; permite ver los días en los que se han tenido ventas, así como el total que se vendió en ese día. Así mismo, si das click en la fecha del día te llevará a una nueva página en la que podrás ver todos los clientes de ese día. Estos datos los podrás generar a través de la app, ya que también te permite ingresar nuevas cuentas para cada día, así como calcular el cambio que necesitas dar con base en el pago recibido. El segundo apartado es Gastos: el cuál te permite generar una lista de compras, la lista de compras actual aparecerá en la página principal del sitio. El tercer apartado es de pendientes, el cual te permite generar una lista de pendientes, igualmente la actual aparecerá en el inicio. Ambos apartados antes mencionados permiten ver listas generadas anterior mente y se organizan por fechas al igual que las ventas. Adicionalmente la app, registra todo el efectivo que entra al negocio a través de las ventas y el efectivo que sale a través de las compras. ¡Prueba la demo en el link de abajo! Y si la quieres para tu negocio o necesitas algo similar, ¡Contáctame!",
