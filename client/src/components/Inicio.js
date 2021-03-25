@@ -7,7 +7,7 @@ function Inicio() {
     return (
         <section id="inicio">
             <div className="column">
-                <p className="intro"> Hola, soy desarrollador web fullstack, especialista en el stack MERN. Actualmente viviendo en la Ciudad de México.<br />¿Quieres impulsar tu negocio con un sitio web?<br />¿Exponer tus ideas o trabajos en un blog?<br />¡Desarrollemos todos tus proyectos web!</p>
+                <p className="intro"> Hola, soy desarrollador web fullstack, egresado del IPN y actualmente viviendo en la Ciudad de México. Me enfoco en el desarrollo con React y Node.<br />Impulsa tu negocio con un sitio web.<br />Expresa tus ideas o conocimientos en Blog.<br />¡Desarrollemos todos los proyectos web que tienes en mente!</p>
                 <Link to="contacto" smooth={true} className="btn btn-contacto">
                     ¡Contáctame!
                 </Link>
