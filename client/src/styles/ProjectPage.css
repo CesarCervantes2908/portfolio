@@ -27,3 +27,11 @@ section.project-page ul.skill-list li{
 .awssld__content  img{
     object-fit: fill !important;
 }
+.btn-link{
+    margin: 2vh 0;
+    text-decoration: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+}
