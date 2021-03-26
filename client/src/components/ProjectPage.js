@@ -6,6 +6,7 @@ import 'react-awesome-slider/dist/styles.css';
 import SkillList from '../components/SkillList';
 import '../styles/ProjectPage.css';
 import ProjectNav from './ProjectNav';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { animateScroll } from 'react-scroll';
 
 
@@ -41,30 +42,32 @@ function ProjectPage() {
     return (
         <>
             <ProjectNav remainProjects={remainProjects}/>
-            <section className="project-page">
-                <h2 className="project-title">
-                    {project.name}
-                </h2>
-                <AwesomeSlider
-                    play={true}
-                    cancelOnInteraction={true}
-                    interval={6000}
-                    style={styles}
-                >
-                    {renderSliderImages(project.images)}
-                </AwesomeSlider>
-                <h3 className="acerca">Sobre Este Proyecto</h3>
-                <p className="project-description">
-                    {project.desc}
-                </p>
-                <h3 className="tecnologias">Tecnologías Utilizadas</h3>
-                <SkillList skills={project.skills}></SkillList>
-                <a 
-                    href={project.link} 
-                    className="btn btn-link" 
-                    target="_blank"
-                    rel="noreferrer">Visita el Sitio</a>
-            </section>
+            <ScrollAnimation animateIn='animate__fadeInLeft'>
+                <section className="project-page">
+                        <h2 className="project-title">
+                            {project.name}
+                        </h2>
+                        <AwesomeSlider
+                            play={true}
+                            cancelOnInteraction={true}
+                            interval={6000}
+                            style={styles}
+                        >
+                            {renderSliderImages(project.images)}
+                        </AwesomeSlider>
+                        <h3 className="acerca">Sobre Este Proyecto</h3>
+                        <p className="project-description">
+                            {project.desc}
+                        </p>
+                        <h3 className="tecnologias">Tecnologías Utilizadas</h3>
+                        <SkillList skills={project.skills}></SkillList>
+                        <a 
+                            href={project.link} 
+                            className="btn btn-link" 
+                            target="_blank"
+                            rel="noreferrer">Visita el Sitio</a>
+                </section>
+            </ScrollAnimation>
         </>
     );
 };
