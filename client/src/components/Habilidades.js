@@ -24,7 +24,7 @@ let skillsGroup = [
         skillGroup: 'General',
         skillImage: generalImg,
         alt: 'Ilustación de un cerebro con un monitor de computadora detrás.',
-        skills: ['Control de Versiones (Git)', 'Python(Procesamiento de Imágenes)', 'C (básico)']
+        skills: ['Control de Versiones (Git)', 'Python', 'C (básico)']
     }
 ];
 function Habilidades() {
